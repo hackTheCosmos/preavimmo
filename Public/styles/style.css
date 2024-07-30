@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Indie+Flower&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.previousButton {
+  padding: 0.2rem 0.4rem;
+  width: 3rem;
+  height: 2rem;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.stageNumber {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.item {
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+.item p {
+  margin: 0.3rem 0;
+}
+
+.button {
+  font-family: "Indie Flower", cursive;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(to right, #ffde17, #f26478);
+  font-weight: bold;
+  box-shadow: 2px 2px 5px black;
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+  width: 15rem;
+  cursor: pointer;
+}
+.button.submitButton {
+  display: none;
+}
+.button.submitButton.active {
+  display: block;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+html body {
+  display: grid;
+  grid-template-rows: 140px 1fr 70px;
+  min-height: 100vh;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+header {
+  grid-row: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  color: #fff;
+  background: rgba(17, 34, 50, 0.8);
+}
+header .headerTitle__wrapper h1 {
+  font-family: "Indie Flower", cursive;
+}
+header .logo__wrapper img {
+  width: 3rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+}
+
+main {
+  padding: 2rem;
+  grid-row: 2/3;
+  background-image: url("../medias/images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.homePage__wrapper .intro__wrapper {
+  text-align: center;
+}
+.homePage__wrapper .intro__wrapper p {
+  margin: 1.5rem 0;
+}
+.homePage__wrapper .intro__wrapper p:first-child {
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.homePage__wrapper .intro__wrapper p:nth-child(2) {
+  font-weight: 500;
+}
+.homePage__wrapper .deadline__wrapper {
+  position: relative;
+}
+.homePage__wrapper .deadline__wrapper i {
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #000;
+  border-radius: 50%;
+}
+.homePage__wrapper .deadline__wrapper p {
+  margin: 1.5rem 0;
+}
+.homePage__wrapper .deadline__wrapper ul {
+  margin-left: 2rem;
+}
+.homePage__wrapper .deadline__wrapper ul li {
+  text-align: left;
+  margin: 0.5rem 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form .inputs__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form .inputs__wrapper.genders {
+  flex-direction: row;
+}
+.form .inputs__wrapper .input__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: start;
+}
+.form .inputs__wrapper .input__wrapper.gender {
+  flex-direction: row;
+  align-items: center;
+}
+.form .inputs__wrapper .input__wrapper input[type=text] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid #000;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+footer {
+  grid-row: 3;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.8rem;
+  background-color: #556575;
+  color: #fff;
+}
+footer .links__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .links__wrapper a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.cguPage__wrapper h1 {
+  margin: 2rem 0;
+  font-family: "Indie Flower", cursive;
+}
+.cguPage__wrapper h2 {
+  margin: 1rem 0;
+}
+.cguPage__wrapper p {
+  margin: 0.5rem 0;
+}
+.cguPage__wrapper .date {
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html, .button {
+    font-size: 120%;
+  }
+  .item {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
